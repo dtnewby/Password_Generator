@@ -81,7 +81,7 @@ function isYes(userInputOfYOrN)
 }
 
 /* This function generates a random password using criteria that the user enters.  The criteria include whether or not the password
-should include lowercase letters, uppercase letters, numbers, and/or symbols (from the OWASP-approved list of symbols). \
+should include lowercase letters, uppercase letters, numbers, and/or symbols (from the OWASP-approved list of symbols).
 The password generated is returned as a String.*/
 function generatePassword()
 {
@@ -194,7 +194,7 @@ function generatePassword()
   }
     
   var randomCharacterIndex = 0;
-  for (var i = 0; i <= pswdLengthNbr; i++)
+  for (var i = 0; i < pswdLengthNbr; i++)
   {
     // Use floor() and random() methods of Math class to generate a random number.
     randomCharacterIndex = Math.floor((Math.random() * charactersToGeneratePswdFrom.length));
